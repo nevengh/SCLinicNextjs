@@ -1,0 +1,91 @@
+.whatsapp-container {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.language-circle {
+  position: absolute;
+  top: -70px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right,#77530a,rgb(152, 111, 28),#77530a,#77530a,rgb(152, 111, 28),#77530a);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+}
+
+.custom-dropdown {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.selected {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+}
+
+.dropdown-options {
+  position: absolute;
+  bottom: 60px; /* Move the dropdown options above the button */
+  right: 0; /* Align the dropdown options to the right of the button */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1002;
+  overflow: hidden;
+  width: 100px; /* Set a consistent width */
+}
+.option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.option img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.whatsapp-btn {
+  background: linear-gradient(to right,#77530a,rgb(152, 111, 28),#77530a,#77530a,rgb(152, 111, 28),#77530a);
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.whatsapp-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-icon {
+  font-size: 23px;
+}

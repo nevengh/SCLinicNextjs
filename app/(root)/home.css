@@ -1,0 +1,195 @@
+.aboutUs-Home {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.aboutUs-Home .about-title {
+  color: #222;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+.aboutUs-Home .about-text {
+  font-size: 19px;
+  line-height: 1.5em;
+  width: 710px;
+  font-weight: 300;
+  color: #222;
+}
+
+
+/* Popular Treatment */
+.PopularTreatment {
+  margin-top: 100px;
+}
+
+.PopularTreatment h1 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 56px;
+}
+  
+.popularTreatment_Head{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 45px;
+  gap: 10px;
+}
+:dir(rtl) .popularTreatment_Head{
+  margin-left: 0;
+  margin-right: 45px;
+}
+.popularTreatment_Head .cta{
+  margin-left: 15px;
+}
+
+.popularTreatment-Container {
+  max-width: 1400px;
+  margin: 20px auto;
+  overflow: hidden; /* Hide overflow to create slider effect */
+}
+
+
+
+
+.Home-Section{
+  margin-top: 100px;
+
+}
+
+.HomeSection-Container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.HomeSection-Container .content-holder{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  background: var(--overlay-bg);
+  padding: 60px 20px 20px 30px;
+}
+.HomeSection-Container .image-holder{
+  width: 50%;
+  height: 100%;
+}
+.HomeSection-Container .image-holder img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.miny-title{
+  font-size: 13px;
+  letter-spacing: 2px;
+  line-height: 1.55em;
+  font-weight: 400;
+  color: var(--primary-gold);
+}
+.content-holder h1{
+  font-size: 48px;
+  line-height: 1.15em;
+  font-weight: 300;
+  color: #222;
+  max-width: 550px;
+  margin-top: 15px;
+}
+.miny-text{
+  font-size: 18px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.45em;
+  margin-top: 25px;
+}
+.treatment-list{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+}
+.treatment-list p{
+  margin-bottom: 20px;
+}
+.treatment-list p span svg{
+  margin-right: 15px;
+  fill: var(--primary-gold);
+}
+.content-holder .cta{
+  margin-top: 35px;
+  margin-left: 15px;
+}
+
+.home-contact{
+margin-top: 40px;
+}
+
+
+
+.doctors-container{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+margin-top: 60px;
+}
+
+.Clinic-name{
+color: var(--primary-gold);
+font-weight: bold;
+}
+
+
+@media(max-width:1024px){
+  .aboutUs-Home .about-text {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .aboutUs-Home .about-title{
+    text-align: center;
+  }
+  .HomeSection-Container{
+    flex-direction: column;
+    height: auto;
+  }
+  .HomeSection-Container .content-holder {
+    width: 100%;
+  }
+  .HomeSection-Container .image-holder {
+    width: 100%;
+}
+}
+@media (max-width: 768px) {
+  .popularTreatment-Container {
+    overflow: hidden;
+    padding: 0 15px;
+  }
+  .doctors-container{
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .slider-track {
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .slider-track > * {
+    flex: 0 0 100%; /* عرض عنصر واحد فقط في كل مرة */
+    max-width: 100%;
+  }
+
+  .arrow-container {
+    justify-content: center;
+    margin: 15px 0;
+  }
+}

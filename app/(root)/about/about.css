@@ -1,0 +1,35 @@
+.about-why-us{
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: 2px;
+    max-width: 420px;
+    line-height: 1.55em;
+}
+.aboutUs-Home {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  
+  .aboutUs-Home .about-title {
+    color: #222;
+    letter-spacing: 3px;
+    font-size: 15px;
+  }
+  
+  .aboutUs-Home .about-text {
+    font-size: 19px;
+    line-height: 1.5em;
+    width: 710px;
+    font-weight: 300;
+    color: #222;
+  }
+  .popularTreatment-Container {
+    max-width: 1400px;
+    margin: 20px auto;
+    overflow: hidden; /* Hide overflow to create slider effect */
+  }

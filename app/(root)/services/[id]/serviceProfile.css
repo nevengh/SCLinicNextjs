@@ -1,0 +1,114 @@
+/* صفحة الخدمة الرئيسية */
+.service-profile {
+    max-width: 1100px;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
+      0px 4px 6px rgba(0, 0, 0, 0.2),
+      0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* العنوان */
+  .service-profile h1 {
+    text-align: center;
+    font-weight: 600;
+    background: linear-gradient(to right, #dba91e, #bc901a, #eaba35);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px transparent;
+  }
+  .service-profile p{
+    text-align: center;
+    margin-top: 10px;
+  }
+  /* حاوية العناصر */
+  .service-profile-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  
+  /* تنسيق الكروت */
+  .service-profile-box {
+    width: 30%; /* تغيير العرض لتناسب التصميم */
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden; /* إخفاء العناصر الزائدة */
+    background: linear-gradient(to right, #dba91e, #bc901a, #eaba35);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* تأثير عند المرور على الكارت */
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .service-profile-box:hover {
+    transform: translateY(-10px); /* تأثير رفع الكارت */
+  }
+  
+  /* تنسيق الصورة داخل الكارت */
+  .service-profile-box .service-profile-box-image {
+    width: 100%;
+    height: 50%;
+    border-bottom: 2px solid #fff;
+    overflow: hidden;
+    position: relative;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  .service-profile-box-image a{
+    position: absolute;
+    right: -5px;
+    top: 20%;
+
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #222;
+    padding: 15px 25px;
+  }
+  .service-profile-box .service-profile-box-image img {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    right: 30%;
+    top: 30%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  /* عند المرور على الصورة */
+  .service-profile-box:hover .service-profile-box-image img {
+    transform: scale(1.05); /* تكبير الصورة عند المرور */
+  }
+  
+  /* محتوى الكارت */
+  .service-profile-box-content {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .service-profile-box-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .service-profile-box-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f4f4f4;
+  }
+  
+
+  @media(max-width:767px){
+    .service-profile-box{
+        width: 100%;
+    }
+  }

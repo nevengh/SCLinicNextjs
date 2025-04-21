@@ -1,0 +1,33 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap'); */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-gray);
+  color: var(--secondary-dark);
+}
+a{
+  text-decoration: none;
+  color: var(--light-gray);
+}
+:root{
+  /* Fonts */
+
+  --font-family-secondary:"Herr Von Muellerhoff", cursive;
+  /* Color */
+  --primary-gold: #b88f49; 
+ 
+  --light-gold: #E8B923;
+  --dark-gold: #B8860B; 
+  --white: #FFFFFF;       
+  --light-gray: #F5F5F5;
+  --dark-gray: #333333; 
+  --black: #000000;   
+  --border-color:#FFFFFF40;
+  --overlay-bg:#a5aea825;
+  --baby-rose:#F7E4E7;
+}
+

@@ -1,0 +1,127 @@
+.Footer{
+    margin-top: 100px;
+    width: 100%;
+    padding: 25px;
+    background-color: var(--overlay-bg);
+    background: linear-gradient(to right,#77530a,rgb(152, 111, 28),#77530a,#77530a,rgb(152, 111, 28),#77530a);
+
+}
+.footer-section,.footer-section-1{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-section-1{
+    margin-top: 80px;
+}   
+.Footer .logo img{
+    width: 240px;
+}
+.footer-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* border: 1px solid red; */
+    gap: 25px;
+    width: 300px;
+    
+}
+.column h2{
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 1.2em;
+    color: #fff;
+}
+.address{
+    color: #ccc;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.45em;
+}
+.social{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.social .iconSocial{
+    width: 40px;
+    height: 40px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background .4s ease-in-out;
+}
+.social .iconSocial:hover {
+    background: var(--primary-gold);
+}
+.social .iconSocial svg{
+    fill: var(--primary-gold);
+    font-size: 23px;
+    transition: fill 0.3s ease-in-out;
+}
+.social .iconSocial:hover svg {
+    fill: var(--white); /* Change SVG fill to white on hover */
+}
+.tele{
+    color: #ccc;
+    font-size: 18px;
+    font-weight: 300;
+}
+.tele svg{
+    fill: none;
+    margin-right: 12px;
+    font-size: 10px;
+    border: 1px solid var(--primary-gold);
+}
+.footer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer-menu a{
+    font-family: monospace;
+    font-weight: 300;
+    font-size: 15px;
+}
+.copywrite{
+    font-weight: 300;
+    font-size: 15px;
+    color: #222;
+    letter-spacing: 1px;
+    line-height: 1.45em;
+}
+
+
+
+
+@media(max-width:920px){
+    .footer-section , .footer-section-1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-section-1 .footer-menu{
+        display: none;
+    }
+    .copywrite{
+        text-align: center;
+    }
+    .column{
+        justify-content: center;
+        align-items: center;
+    }
+}

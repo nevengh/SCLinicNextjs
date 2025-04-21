@@ -1,0 +1,6 @@
+
+.popularTreatment-Container {
+    max-width: 1400px;
+    margin: 20px auto;
+    overflow: hidden; /* Hide overflow to create slider effect */
+  }

@@ -1,0 +1,78 @@
+.serviceBox {
+    flex: 0 0 376.26px; /* Fixed width for each item */
+    height: 560px;
+    border-radius: 20px;
+    position: relative;
+    margin-right: 20px; /* Space between items */
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+  }
+  
+  .serviceBox::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+    z-index: 14;
+  }
+  .serviceBox:hover::before{
+    background: rgba(0, 0, 0, 0.484);
+  }
+  .serviceBox img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .category{
+    font-size: 13px;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.7em;
+    letter-spacing: 2px;
+    font-family: monospace;
+  }
+  .serviceName{
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.25em;
+    color: var(--white);
+    margin-top: 17px;
+  }
+  .viewDetails-BTN a{
+    padding: 14px 34px 14px 34px;
+    background: #FFFFFF26;
+    line-height: 1.6em;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 12px;
+    border: 0.5px solid var(--white) ;
+    margin-bottom: 25px;
+    transition: background .4s ease-in-out,color 0.4s ease-in-out;
+  }
+  .viewDetails-BTN a:hover{
+    background: var(--white);
+    color: var(--black);
+  }
+   .viewDetails-BTN p{
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.75em;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-family: monospace;
+   }
+  .box-container{
+    position: absolute;
+    z-index: 14;
+    padding: 20px 25px 35px 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }

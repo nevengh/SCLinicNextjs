@@ -1,0 +1,119 @@
+.Navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 20px 10px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  .logo img {
+    width: 250px;
+    height: 58px;
+  }
+  
+  .nav-menu {
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-links {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    color: #222;
+    text-decoration: none;
+  }
+  
+  .separator {
+    font-size: 20px;
+    color: #000;
+  }
+  
+  /* Burger menu icon styles */
+  .burger-menu {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  .burger-menu svg path{
+    fill: var( --dark-gold);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    
+    .nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 30px 20px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.982);
+    backdrop-filter: blur(20px);
+    border-radius: 0;
+    border: none;
+    overflow: hidden;
+  }
+
+  .nav-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(/logo.svg);
+    background-size: cover;
+    margin-top: -30px;
+    background-position: center;
+    filter: blur(30px);
+    z-index: -1;
+  }
+  .nav-menu .nav-links{
+    color: white;
+  }
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .burger-menu {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .separator {
+      display: none;
+    }
+  
+    .Navbar {
+      padding: 15px;
+    }
+  
+    .logo img {
+      width: 200px;
+    }
+    .nav-links{
+        font-size: 24px;
+        color: var(--white);
+    }
+    .burger-menu svg{
+        fill: white;
+    }
+    
+  }
+  

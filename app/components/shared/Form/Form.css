@@ -1,0 +1,157 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form form {
+    padding: 40px;
+    border: 2px solid #EAE6E7;
+    width: 940px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.form-subtitle {
+    font-family: monospace;
+    font-weight: 700;
+    color: var(--primary-gold);
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.form-Maintitle {
+    font-size: 42px;
+    font-weight: 300;
+    text-align: center;
+    color: #222;
+    margin-top: 15px;
+}
+
+.FORMcontainer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.FORMrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.FORMrow .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.FORMrow .inputGroup label {
+    font-weight: 400;
+    font-size: 15px;
+    color: #222;
+    line-height: 1.55em;
+    letter-spacing: 2px;
+}
+
+.inputGroup input,
+.inputGroup select {
+    width: 300px;
+    color: #222;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.75em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: none;
+    border: 2px solid #EAE6E7;
+}
+
+.submit {
+    padding: 20px;
+    border: 1px solid var(--primary-gold);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.1em;
+    color: #222;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    width: 300px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/* على الشاشات الصغيرة */
+@media(max-width: 945px) {
+    .Form form {
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .FORMcontainer {
+        gap: 30px;
+    }
+
+    .FORMrow {
+        gap: 20px;
+    }
+
+    .inputGroup input,
+    .inputGroup select {
+        width: 100%;
+    }
+
+    .submit {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form-Maintitle {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+}
+
+/* على الموبايل الصغير جدًا */
+@media(max-width: 480px) {
+    .FORMcontainer {
+        gap: 20px;
+    }
+
+    .FORMrow {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .Form form {
+        padding: 15px;
+    }
+    .inputGroup{
+        width: 100%;
+    }
+    .inputGroup input,
+    .inputGroup select {
+        padding: 8px 14px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .form-subtitle {
+        font-size: 11px;
+    }
+
+    .form-Maintitle {
+        font-size: 22px;
+    }
+
+    .submit {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

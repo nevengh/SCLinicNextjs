@@ -1,0 +1,88 @@
+.contact-subtitle {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.55em;
+  letter-spacing: 2px;
+  color: var(--primary-gold);
+  font-family: monospace;
+}
+.contact-Maintitle {
+  margin-top: 20px;
+  font-size: 48px !important;
+  line-height: 1.1em;
+  font-weight: 300;
+  color: #222;
+}
+.contact-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+.contact-btns .contact-book {
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #222;
+  background-color: #ffd277;
+  transition: background 0.4s ease-in-out, all 0.4s ease-in-out;
+}
+.contact-btns .contact-book:hover {
+  background-color: #fbca68;
+  transform: scale(0.95);
+}
+.contact-phone svg {
+  fill: #222;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.contact-phone {
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #222;
+  font-size: 18px;
+}
+
+.HomeSection-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.image-holder {
+  width: 50%;
+  height: 100%;
+}
+.image-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content-holder {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background: var(--overlay-bg);
+  padding: 60px 20px 20px 30px;
+}
+
+/* 
+
+
+@media(max-width:920px){
+  .HomeSection-Container .content-holder {
+    justify-content: center;
+    align-items: center;
+}
+.HomeSection-Container .content-holder h1{
+    text-align: center;
+    font-size: 45px !important;
+}
+} */
