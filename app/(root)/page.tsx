@@ -1,9 +1,8 @@
 "use client";
-import Link from "next/link";
 import Hero from "../components/Hero/Hero";
 import ArrowBTN from "../components/shared/ArrowBTN/ArrowBTN";
 import Slider from "../components/shared/Slider/Slider";
-import { useLanguage } from "../context/LanguageContext";
+
 import ar from "../locales/ar";
 import en from "../locales/en";
 import "./home.css";
@@ -16,6 +15,7 @@ import { doctors } from "../DB/Doctors";
 import CustomerReview from "../components/CustomerReview/CustomerReview";
 import BFAfter from "../components/shared/BFAfter/BFAfter";
 import Form from "../components/shared/Form/Form";
+import { useLanguage } from "../context/LanguageContext";
 export default function Home() {
   const services = useServiceDetails();
   const { language } = useLanguage();

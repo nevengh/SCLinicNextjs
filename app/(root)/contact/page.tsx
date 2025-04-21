@@ -9,7 +9,7 @@ import Form from "@/app/components/shared/Form/Form";
 
 
 
-const ContactUs = () => {
+const Page = () => {
   const { language } = useLanguage();
   const translations = language === "en" ? en : ar;
   return (
@@ -61,4 +61,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Page;

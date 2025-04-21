@@ -6,6 +6,7 @@ import en from "../../locales/en";
 import ar from "../../locales/ar";
 import { useLanguage } from "@/app/context/LanguageContext";
 import Link from "next/link";
+import Image from "next/image";
 const Footer = () => {
     const { language } = useLanguage();
     const translations = language === "en" ? en : ar;
@@ -13,7 +14,7 @@ const Footer = () => {
     <div className="Footer">
       <div className="footer-section">
         <div className="logo">
-          <img src={'/logo.svg'} alt="" width={250} height={58} />
+          <Image src={'/logo.svg'} alt="" width={250} height={58} />
         </div>
         <div className="footer-column">
           <div className="column">

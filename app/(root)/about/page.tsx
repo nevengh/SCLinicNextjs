@@ -8,7 +8,7 @@ import PageHero from "@/app/components/shared/PageHero/PageHero";
 import Slider from "@/app/components/shared/Slider/Slider";
 import DoctorBox from "@/app/components/shared/DoctorBox/DoctorBox";
 
-const About = () => {
+const Page = () => {
   const { language } = useLanguage();
   const translations = language === "en" ? en : ar;
   return (
@@ -50,4 +50,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Page;

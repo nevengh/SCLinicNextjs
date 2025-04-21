@@ -9,7 +9,7 @@ import Slider from "@/app/components/shared/Slider/Slider";
 import { useServiceDetails } from "@/app/DB/service";
 import ServiceBox from "@/app/components/shared/ServiceBox/ServiceBox";
 
-const page = () => {
+const Page = () => {
   const { language } = useLanguage();
   const translations = language === "en" ? en : ar;
   const services = useServiceDetails();
@@ -40,4 +40,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

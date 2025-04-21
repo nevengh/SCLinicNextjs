@@ -1,4 +1,5 @@
-import { Translations } from '../types';
+import { Translations } from "../types/types";
+
 
 const ar: Translations = {
     

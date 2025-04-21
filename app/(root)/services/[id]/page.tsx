@@ -6,8 +6,9 @@ import { useLanguage } from "@/app/context/LanguageContext";
 import en from "@/app/locales/en";
 import ar from "@/app/locales/ar";
 import Link from "next/link";
+import Image from "next/image";
 
-const ServiceProfile = () => {
+const Page = () => {
   const { id } = useParams() as { id: string };
   const services = useServiceDetails();
   const { language } = useLanguage();
@@ -29,7 +30,7 @@ console.log(selectedService);
         {selectedService.services.map((subService) => (
           <div key={subService.id} className="service-profile-box">
             <div className="service-profile-box-image">
-              <img src={subService.img.src} alt={subService.name} />
+              <Image src={subService.img.src} alt={subService.name} width={40} height={40} />
               <Link href="/contact">{translations.bookVisit}</Link>
             </div>
             <div className="service-profile-box-content">
@@ -43,4 +44,4 @@ console.log(selectedService);
   );
 };
 
-export default ServiceProfile;
+export default Page;
